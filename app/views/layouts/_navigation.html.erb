@@ -1,14 +1,15 @@
 <nav class="nav p5">
     <h1 class="nav-brand">
         <a href="#" class="nav-brand-link text-uppercase text-white font-size-large">The Linux Foundation</a>
+        <%= link_to 'The Linux Foundation', root_path, class: "nav-brand-link text-uppercase  text-white font-size-large"%>
     </h1>
 
     <ul class="nav_ul">
         <li class="nav-li">
-            <a href="#" class="nav-link text-white">Home</a>
+            <%= link_to 'Home', root_path, class: "nav-link text-white"%>
         </li>
         <li class="nav-li">
-            <a href="#" class="nav-link text-white">About</a>
+            <%= link_to 'About', home_about_path, class: "nav-link text-white"%>
         </li>
     </ul>
 </nav>

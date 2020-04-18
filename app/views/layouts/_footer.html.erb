@@ -1,5 +1,14 @@
 <footer class="footer">
-    <p class="copy"><a href="#" class="copy-link text-uppercase text-white text-bolder font-size-medium">The Linux
-            Journal</a></p>
-</footer>
+    <p class="copy">
+            <%= link_to 'The Linux Foundation', root_path, class: "text-uppercase copy-link text-white font-size-medium"%>
 
+        </p>
+            <ul class="nav_ul">
+                <li class="nav-li">
+                    <%= link_to 'Home', root_path, class: "nav-link text-white"%>
+                </li>
+                <li class="nav-li">
+                    <%= link_to 'About', home_about_path, class: "nav-link text-white"%>
+                </li>
+            </ul>
+</footer>
