@@ -1,0 +1,117 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$success: #20a820;
+
+//helper classes
+
+.text{
+
+    &-uppercase{
+    text-transform: uppercase;
+    }  
+    
+    &-white{
+        color: white;
+    }
+    &-grey{
+        color: grey;
+    }
+    &-success{
+        color: $success;
+    }
+
+    &-danger{
+        color: red;
+    }
+}
+
+.p{
+    &5{
+        padding: 30px;
+    }
+}
+
+.font{
+    &-size{
+        
+        &-small{
+            font-size:10px;
+        }
+        &-medium{
+            font-size: 20px;
+        }
+        &-large{
+            font-size: 25px;
+        }
+    }
+    &-weight{
+
+    &-bold{
+        font-weight: bold;
+    }
+    &-bolder{
+        font-weight: bolder;
+    }
+}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+@mixin hover_grey {
+    text-decoration: underline;
+    color: rgb(209, 209, 209);
+}
+
+// navigation-style
+.nav{
+
+    &-brand{
+        float: left;
+
+        &-link{
+            &:hover{
+                @include hover_grey()
+            }
+        }
+    }
+    background-color: $success;
+
+    &_ul{
+        display: flex;
+        justify-content: end;
+    }
+
+    &-li{
+        text-transform: uppercase;
+        padding-right: 10px;
+    }
+    &-link{
+
+        &:hover{
+            @include hover_grey()
+        }
+    }
+}
+
+.footer{
+    padding: 20px;
+    background-color: $success;
+    color: white;
+}
+
+
+//end navigation style
