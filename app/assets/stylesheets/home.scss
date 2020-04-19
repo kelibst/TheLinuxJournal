@@ -33,6 +33,11 @@ $success: #20a820;
         text-align: center;
     }
 }
+.bg{
+    &-danger{
+        background-color: rgba(190, 29, 0, 0.753);
+    }
+}
 
 .p{
     &5{
