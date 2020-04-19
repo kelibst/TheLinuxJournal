@@ -10,18 +10,20 @@
       </ul>
     </div>
   <% end %>
-
+<div class="form-container">
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :title %> <br>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.label :description %> <br>
+    <%= form.text_area :description, rows: "15" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit :class => "btn btn-success" %>
   </div>
+</div>
+  
 <% end %>
