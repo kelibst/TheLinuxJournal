@@ -57,6 +57,11 @@ $success: #20a820;
             padding: 0 auto;
         }
     }
+    &y{
+        &-medium{
+            padding: 20px 0;
+        }
+    }
 }
 .m{
     &x{
@@ -158,7 +163,7 @@ li{
 
 .container{
 
-    width: 80%;
+    max-width: 800px;
     margin: 20px auto;
     
 }

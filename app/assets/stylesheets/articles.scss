@@ -20,3 +20,17 @@
         }
     }
 }
+
+.show{
+    &-container{
+        max-width: 500px;
+        margin: 20px auto;
+    }
+
+    &-button{
+        &-container{
+            margin: 20px auto;
+            text-align: center;
+        }
+    }
+}
