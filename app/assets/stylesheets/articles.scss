@@ -1,3 +1,22 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.list{
+    &-container{
+        max-width: 800px;
+    }
+    &-card{
+        padding: 20px;
+        background: lightblue;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    &-article{
+        &-description{
+            padding: 20px;
+            border: 1px solid grey;
+            border-radius: 10px;
+        }
+    }
+}

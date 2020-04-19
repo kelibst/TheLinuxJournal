@@ -49,6 +49,21 @@ $success: #20a820;
             padding-bottom: 25px;
         }
     }
+    &x{
+        &-small{
+            padding: 0 10px;
+        }
+        &-auto{
+            padding: 0 auto;
+        }
+    }
+}
+.m{
+    &x{
+        &-auto{
+            margin: 0 auto;
+        }
+    }
 }
 
 .font{
@@ -92,6 +107,10 @@ li{
 @mixin hover_grey {
     text-decoration: underline;
     color: rgb(209, 209, 209);
+}
+
+@mixin hover_danger{
+    background-color: sienna;
 }
 
 // navigation-style
@@ -164,13 +183,34 @@ li{
     padding: 10px;
     color: white;
     border: 1px solid white;
-    border-radius: 10px;
+    
     transition: all .2s;
     &-success{
         background-color: $success;
+        border-radius: 5px;
         &:hover{
             background-color: green;
             border: 1px solid grey;
+            border-radius: 10px;
+        }
+    }
+    &-danger{
+        background-color: rgba(218, 9, 9, 0.589);
+        border: none;
+        border-radius: 5px;
+        &:hover{
+            
+            @include hover_danger();
+            border-radius: 10px;
+        }
+    }
+    &-primary{
+        border: none;
+        background-color: royalblue;
+        border-radius: 5px;
+        &:hover{
+            background-color: rgba(105, 90, 205, 0.726);
+            border-radius: 10px;
         }
     }
 }
